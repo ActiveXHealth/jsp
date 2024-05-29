@@ -1,0 +1,253 @@
+/*Estilo pagina completa*/
+.general {
+    background-color: var(--morado-intermedio);
+    color: var(--blanco-primary);
+    text-align: center;
+    height: calc(100vh - 70px);
+    padding-top: 18px;
+    padding-left: 25px;
+}
+.contenedorFrames {
+    display: flex;
+    align-items: center;
+}
+.columnaSemana {
+    flex: 0.85;
+    display: flex;
+    flex-direction: column;
+}
+.columnaMedio {
+    flex: 1.45;
+    display: flex;
+    flex-direction: column;
+}
+.columnaRecords {
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+}
+.frameSemana, .framePeso, .frameRecords, .frameDiario{
+    margin-right: 20px;
+    background-color: var(--blanco-primary);
+    color: var(--negro-primary);
+    border-radius: 20px;
+    padding: 35px 30px;
+}
+.frameSemana {
+    width: 96%;
+    height: 710px;
+    text-align: left;
+}
+.framePeso {
+    width: 97.75%;
+    height: 51%;
+    text-align: center;
+}
+.frameRecords {
+    width: 95%;
+    height: 100%;
+    text-align: left;
+}
+.frameDiario {
+    width: 97.75%;
+    height: 50%;
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.semana1, .semana2, .semana3 {
+    margin: 10px;
+    background-color: var(--blanco-primary);
+    color: var(--negro-primary);
+    border-radius: 20px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.1);
+    padding: 15  px 25px;
+    width: 96%;
+    height: 135px;
+    margin-top: 30px;
+}
+.img {
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    margin-top: -12px;
+}
+.agregar {
+    background-color: var(--morado);
+    color: var(--blanco-primary);
+    border-radius: 20px;
+    text-align: center;
+    border: 0px;
+    height: 60px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.columnaGrafica {
+    flex: 1.05;
+    display: flex;
+    flex-direction: column;
+}
+.columnaMensajes {
+    flex: .95;
+    display: flex;
+    flex-direction: column;
+}
+.division {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.graficaPeso {
+    margin: 10px;
+    background-color: var(--blanco-primary);
+    color: var(--negro-primary);
+    border-radius: 20px;
+    width: 96%;
+    height: 170px;
+    margin-top: 30px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.1);
+    padding-left: 50px;
+    margin-left: -10px;
+}
+.registrar, .cambiarObjetivo {
+    margin: 10px;
+    background-color: var(--azul-claro);
+    color: var(--blanco-primary);
+    border-radius: 20px;
+    border: 0px;
+    width: 95%;
+    height: 40px;
+    padding: 10px;
+}
+.mensaje1 {
+    margin: 8px;
+    background-color: var(--rosa);
+    color: var(--blanco-primary);
+    border-radius: 20px;
+    border: 0px;
+    width: 96%;
+    height: 120px;
+    line-height: 120px;
+    box-shadow: 0px 12px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding: 15px;
+}
+.mensaje2 {
+    margin: 8px;
+    background-color: var(--amarillo);
+    color: var(--blanco-primary);
+    border-radius: 20px;
+    border: 0px;
+    width: 96%;
+    height: 120px;
+    line-height: 120px;
+    box-shadow: 0px 12px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding: 15px;
+}
+.records {
+    margin: 12px;
+    color: var(--negro-primary);
+    border-radius: 20px;
+    width: 96%;
+    height: 60px;
+    line-height: 65px;
+    margin-top: 15px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.1);
+    padding-top: 15px;
+    border: 1px solid black;
+    padding-left: 2px;
+}
+.personalizar {
+    background-color: var(--rojo);
+    color: var(--blanco-primary);
+    border-radius: 16px;
+    border: 0px;
+    width: 70%;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.1);
+}
+.graficas {
+    width: 150px;
+    height: 150px;
+}
+.button1 {
+    background-color: var(--azul-claro);
+    color: var(--blanco-primary);
+    border-radius: 16px;
+    border: 0px;
+    width: 60%;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.button2 {
+    background-color: var(--morado-intermedio);
+    color: var(--blanco-primary);
+    border-radius: 16px;
+    border: 0px;
+    width: 60%;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.button3 {
+    background-color: var(--rojo);
+    color: var(--blanco-primary);
+    border-radius: 16px;
+    border: 0px;
+    width: 60%;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.graficaSemana {
+    height: 20px;
+    width: 370px;
+}
+.contenedorProgreso {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: -30px;
+}
+.porcentaje {
+    margin-left: 20px;
+}
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgSemana {
+    margin-right: 20px;
+}
+
+
+/* Variables de color */
+:root {
+    --azul: rgb(87, 183, 189);
+    --blanco-primary: rgb(248, 249, 255);
+    --morado-intermedio: rgb(201, 181, 250);
+    --negro-primary: rgb(45, 45, 45);
+    --morado: rgb(121, 89, 212);
+    --azul-claro: rgb(111, 206, 227);
+    --rosa: rgb(236, 204, 244);
+    --amarillo: rgb(255, 202, 70);
+    --rojo: rgb(253, 93, 91);
+}
