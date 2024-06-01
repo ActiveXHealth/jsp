@@ -1,0 +1,41 @@
+/* ESTILOS GENERALES*/
+body {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de la barra de navegación */
+.navbarsita {
+    background-color: var(--blanco-primary);
+}
+
+/* Estilos del botón de cambio de tema */
+.btnTemaOscuro {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+.imgLuna {
+    height: 30px;
+    margin-bottom: 2.5px;
+}
+
+.btnUser {
+    background-color: var(--azul);
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 3px 3px 10px 0 rgba(145, 145, 145, 0.445);
+}
+
+/* Variables de color */
+:root {
+    --azul: rgb(87, 183, 189);
+    --blanco-primary: rgb(248, 249, 255);
+    --morado-intermedio: rgb(148, 119, 231);
+}
