@@ -34,7 +34,7 @@
 
     <nav class="navbar navbar-expand-lg border-bottom navbar1 light-mode">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.jsp">
                 <img src="assets/img/Logo.png" alt=""> ActiveX
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -48,12 +48,12 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="index.jsp">Inicio</a>
                         </li>
                     </ul>
                     <div class="d-flex ms-auto">
                         <a class="btn btnSignIn mx-3" style="margin-top: 3px;" id="btnUno" href="login.jsp" role="button" rel="noreferrer">Ingresar</a>
-                        <button class="btnSignUp px-3 py-2" type="submit">Registrarse</button>
+                        <a class="btnSignUp px-3 py-2" type="submit" style="text-decoration: none;height: 90%;margin-top: 1px" href="signUp.jsp">Registrarse</a>
                         <button onclick="modoOscuro()" class="btn btnTemaOscuro">
                             <img class="imgLuna" src="assets/img/moon.png" alt="">
                         </button>
@@ -164,7 +164,8 @@
                             <li>Dieta generada automáticamente</li>
                             <li>Seguimiento de objetivos</li>
                         </ul>
-                        <button class="mb-4 mt-3 btnA" style="font-weight: 500;"><a href="login.html" style="text-decoration: none;color: white;">¡Comienza ya!</a></button>
+                        <a href="login.jsp" style="text-decoration: none;color: white;"><button class="mb-4 mt-3 btnA" style="font-weight: 500;">¡Comienza ya!</button></a>
+                        
                     </div>
                 </div>
                 <div class="col-lg col-md-12 col-sm-12 mb-4 d-flex justify-content-center" style="cursor: not-allowed;">

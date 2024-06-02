@@ -5,9 +5,9 @@ body {
     font-family: "Poppins", sans-serif;
   }
   
-  .colMorada {
+  .colAzul {
     width: 38%;
-    background-color: rgb(204, 191, 255);
+    background-color: rgb(141, 227, 141);
     position: relative;
     height: 100%;
   }
@@ -28,11 +28,10 @@ body {
     height: max-content;
     min-height: max-content;
     max-width: max-content;
-    top: 10%; 
+    top: 15%; 
     box-shadow: 0 4px 35px rgba(2, 2, 2, 0.089);
-    padding: 20px;
     display: flex;
-    margin-left: 23%;
+    margin-left: 17%;
   }
   
   
@@ -62,7 +61,6 @@ body {
   }
 
   .ingresaTit {
-    margin-top: -10px;
     font-size: 55px;
   }
 
@@ -111,7 +109,7 @@ body {
     border-radius: 10px;
     border: none;
     box-shadow: 0px 10px 19px 0 rgba(120, 147, 65, 0.301);
-    background-color: var(--azul-cielo);
+    background-color: rgb(91,198,91);
     color: var(--blanco-primary);
   }
 
@@ -122,8 +120,8 @@ body {
     border-radius: 10px;
     border: none;
     box-shadow: 0px 5px 20px 0 rgba(95, 183, 189, 0.123);
-    background-color: rgb(232, 251, 255);
-    color: var(--azul-aqua);
+    background-color: rgb(230, 224, 255);
+    color: rgb(148,119,230);
   }
 
   .salySitting {
@@ -135,7 +133,14 @@ body {
     font-weight: 300;
   }
   
-@media (max-width: 1600px) {
+  .filaDatos1 .input{
+      height: 60%;
+  }
+  
+  .filaDatos2 .input{
+      height: 60%;
+  }
+@media (max-width: 1900px) {
     .container-login {
       left: 3%; /* Cambiar el left a 10% en pantallas pequeñas y medianas */
       display: block;
@@ -146,9 +151,6 @@ body {
       font-size: 40px;
     }
 
-    .salySitting {
-        display: none;
-    }
     
   }
 

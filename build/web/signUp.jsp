@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ActiveX - Iniciar Sesión</title>
+    <title>ActiveX - Registrarse</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,21 +19,21 @@
     
 </head>
 <body>
-    <div class="colMorada">
+    <div class="colAzul">
         <p class="brandActiveX">ActiveX</p>
-        <img class="salyDiscover" src="assets/img/Saly-discover.png" alt="alt"/>
+        <img src="assets/img/signup/Saly-14.png" style="margin-left: 100px" alt="alt"/>
     </div>
     <div class="colBlanca">
-        <img class="salySitting" src="assets/img/login/Saly-sitting.png" alt="alt"/>
+        <img class="saly15" src="assets/img/index/Saly-15.png" style="margin-left: 30%" alt="alt"/>
     </div>
-    <form class="container-login" method="post" action="dashboard.jsp">
+    <form class="container-login" method="post" action="registroDatos.jsp" style="max-width: 540px">
         <div class="container-contenidoLogin">
             <div class="justify-content-between d-flex">
-                <p class="encabezadoLogin saludoLogin">¡Hola de nuevo!</p>
-                <p class="encabezadoLogin preguntaLogin text-end">¿No tienes una cuenta? <br><a style="color: var(--azul-aqua);text-decoration: none;" href="signUp.jsp">Crea una</a></p>
+                <p class="encabezadoLogin saludoLogin">¡Bienvenido a ActiveX!</p>
+                <p class="encabezadoLogin preguntaLogin text-end">¿Ya tienes una cuenta? <br><a style="color: rgb(148,119,230);text-decoration: none;" href="login.jsp">Ingresa</a></p>
             </div>
             <div>
-                <h1 class="ingresaTit">Ingresa</h1>
+                <h1 class="ingresaTit">Regístrate</h1>
             </div>
             <div class="container-datos container-correoNombre">
                 <label for="correo">
@@ -41,11 +41,26 @@
                 </label>
                 <input type="email" class="fieldNombre field" id="correo" value="" placeholder="Tu correo" required>
             </div>
-            <div class="container-datos container-contraseña">
-                <label for="contraseñaLogin">
-                    Introduce tu contraseña
+            <div class="container-datos container-correoNombre d-flex" style="max-width: 500px;gap: 15px">
+                <div>
+                        <label for="nombre">
+                    Introduce tu nombre
                 </label>
-                <input class="fieldContraseña field" id="contaseñaLogin" placeholder="Tu contraseña" type="password" required>
+                <input type="text" class="fieldNombre field" id="nombre" value="" placeholder="Tu nombre" required>
+                </div>
+                <div>
+                    <label for="apellidos">
+                    Introduce tus apellidos
+                </label>
+                <input type="text" class="fieldApellidos field" id="apellidos" value="" placeholder="Tus apellidos" required>
+                </div>
+                
+            </div>
+            <div class="container-datos container-contraseña">
+                <label for="contraseñaSignUp">
+                    Crea una contraseña
+                </label>
+                <input class="fieldContraseña field" id="contaseñaSignUp" placeholder="Tu contraseña" type="password" required>
                 <div class="form-check pt-2 d-flex">
                 <input class="form-check-input checkMostrar" type="checkbox" id="checkMostrar" onclick="mostrar('fieldContraseña1')"><label class="form-check-label px-2" for="checkMostrar">Mostrar contraseña</label>
                 <!-- Reset de contraseña (desarrollo en un futuro)
@@ -73,7 +88,8 @@
             </div>
         </div>
     </form>
-    <style><%@include file="assets/css/login.css"%></style>
+    <style><%@include file="assets/css/signUp.css"%></style>
+   <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/main.js"></script>
     <!--SCRIPTS DE BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
